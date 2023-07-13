@@ -10,7 +10,7 @@ int main(void)
 
     char *t = malloc(strlen(s) + 1);
 
-    for (int i = 0; i < strlen(s) + 1; i++)
+    for (int i = 0, n = strlen(s) + 1; i < n; i++) // avoid calling func every time
     {
         t[i] = s[i];
     }
